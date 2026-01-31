@@ -1,0 +1,744 @@
+/* Page Hero Section */
+.aboutpage-hero-section {
+    position: relative;
+    height: 400px;
+    background-image: url('./assets/aboutbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(26 26 26 / 70%);
+    z-index: 1;
+}
+
+.about-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* same as background-image cover */
+    border-radius: 12px;
+    /* if your design has rounded corners */
+}
+
+.aboutpage-hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.about-hero-content {
+    text-align: left;
+}
+
+.about-hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.breadcrumb-nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.breadcrumb-nav a:hover {
+    color: #3bb4e5;
+}
+
+.breadcrumb-nav .separator {
+    color: white;
+    font-weight: 600;
+}
+
+.breadcrumb-nav .current {
+    color: #3bb4e5;
+    font-weight: 600;
+}
+
+/* About Content Section */
+.about-content-section {
+    padding: 30px 0;
+    background: white;
+}
+
+/* Ship Image */
+.about-ship-image {
+    margin-bottom: 60px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.about-ship-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Overview Section */
+.overview-section {
+    margin-bottom: 20px;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #0b4a78;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.overview-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.overview-content p {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.overview-content p strong {
+    color: #0b4a78;
+    font-weight: 700;
+}
+
+/* Vision & Mission Cards */
+/* Vision & Mission Tabs Section */
+.vision-mission-tabs-section {
+    position: relative;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0b4a78 0%, #1067a5 100%);
+    overflow: hidden;
+}
+
+/* Decorative Background Pattern */
+.vision-mission-tabs-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(135deg, rgb(11 75 120) 0%, rgb(11 76 122 / 81%) 100%), url(./assets/vm.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.vision-mission-tabs-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Tab Buttons */
+.vm-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.vm-tab-btn {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 18px 50px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.vm-tab-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.vm-tab-btn.active {
+    background: linear-gradient(135deg, #0870B6 0%, #0870B6 100%);
+    border-color: #0870B6;
+}
+
+.vm-tab-btn svg {
+    flex-shrink: 0;
+}
+
+/* Tab Content Wrapper */
+.vm-tab-content-wrapper {
+    position: relative;
+    min-height: 250px;
+}
+
+.vm-tab-content {
+    display: none;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.vm-tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Content Box */
+.vm-content-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.vm-content-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .vm-content-heading {
+        font-size: 1.6rem;
+    }
+
+    .vm-content-box {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .vision-mission-tabs-section {
+        padding: 60px 0;
+    }
+
+    .vm-tabs {
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+
+    .vm-tab-btn {
+        padding: 16px 40px;
+        font-size: 1.2rem;
+        gap: 12px;
+    }
+
+    .vm-tab-btn svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .vm-content-box {
+        padding: 45px 40px;
+    }
+
+    .vm-content-heading {
+        font-size: 1.5rem;
+        line-height: 1.7;
+    }
+}
+
+@media (max-width: 768px) {
+    .vision-mission-tabs-section {
+        padding: 50px 0;
+    }
+
+    .vm-tabs {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 35px;
+    }
+
+    .vm-tab-btn {
+        width: 100%;
+        max-width: 300px;
+        padding: 14px 35px;
+        font-size: 1.15rem;
+        justify-content: center;
+    }
+
+    .vm-tab-btn svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .vm-content-box {
+        padding: 40px 35px;
+    }
+
+    .vm-content-heading {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 576px) {
+    .vision-mission-tabs-section {
+        padding: 40px 0;
+    }
+
+    .vm-tabs {
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .vm-tab-btn {
+        max-width: 280px;
+        padding: 12px 30px;
+        font-size: 1.05rem;
+        gap: 10px;
+    }
+
+    .vm-tab-btn svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .vm-content-box {
+        padding: 35px 25px;
+        border-radius: 15px;
+    }
+
+    .vm-content-heading {
+        font-size: 1.15rem;
+        line-height: 1.6;
+    }
+
+    .vm-tab-content-wrapper {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    .vm-tab-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    .vm-content-box {
+        padding: 30px 20px;
+    }
+
+    .vm-content-heading {
+        font-size: 1.05rem;
+        line-height: 1.5;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .about-hero-title {
+        font-size: 3.5rem;
+    }
+
+    .section-heading {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .aboutpage-hero-section {
+        height: 350px;
+    }
+
+    .about-hero-title {
+        font-size: 3rem;
+    }
+
+    .about-content-section {
+        padding: 60px 0;
+    }
+
+    .about-ship-image {
+        margin-bottom: 50px;
+    }
+
+    .overview-section {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutpage-hero-section {
+        height: 300px;
+    }
+
+    .about-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .breadcrumb-nav {
+        font-size: 0.95rem;
+    }
+
+    .about-content-section {
+        padding: 50px 0;
+    }
+
+    .section-heading {
+        font-size: 2rem;
+    }
+
+    .overview-content p {
+        font-size: 1rem;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .aboutpage-hero-section {
+        height: 250px;
+    }
+
+    .about-hero-title {
+        font-size: 2rem;
+    }
+
+    .breadcrumb-nav {
+        font-size: 0.9rem;
+    }
+
+    .about-content-section {
+        padding: 40px 0;
+    }
+
+    .about-ship-image {
+        margin-bottom: 40px;
+        border-radius: 15px;
+    }
+
+    .section-heading {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .overview-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .overview-section {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .about-hero-title {
+        font-size: 1.8rem;
+    }
+
+    .section-heading {
+        font-size: 1.6rem;
+    }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-ship-image,
+.overview-section,
+.vm-card {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.vm-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.vm-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+
+/* Core Values Section */
+.core-values-section {
+    padding: 50px 0;
+    background: #ffffff;
+}
+
+/* Section Heading */
+.core-values-heading {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #0b4a78;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+/* Values Grid - Using CSS Grid */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Value Card */
+.value-card {
+    background: #f8f9fa;
+    padding: 15px 20px;
+    text-align: center;
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.value-card:hover {
+    background: white;
+    border-color: #3bb4e5;
+    box-shadow: 0 15px 40px rgba(59, 180, 229, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Value Icon */
+.value-icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: invert(58%) sepia(92%) saturate(1451%) hue-rotate(167deg) brightness(89%) contrast(86%);
+}
+
+
+
+/* Value Title */
+.value-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0b4a78;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+/* Value Description */
+.value-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #666;
+    margin: 0;
+}
+
+/* Responsive Design - Tablet */
+@media (max-width: 1200px) {
+    .core-values-heading {
+        font-size: 2.5rem;
+    }
+
+    .values-grid {
+        gap: 25px;
+    }
+
+    .value-card {
+        padding: 40px 30px;
+    }
+
+    .value-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+
+    .value-title {
+        font-size: 1.3rem;
+    }
+
+    .value-description {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive Design - Tablet Portrait */
+@media (max-width: 992px) {
+    .core-values-section {
+        padding: 60px 0;
+    }
+
+    .core-values-heading {
+        font-size: 2.2rem;
+        margin-bottom: 50px;
+    }
+
+    /* 2 columns on tablet */
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .value-card {
+        padding: 35px 28px;
+    }
+}
+
+/* Responsive Design - Mobile */
+@media (max-width: 768px) {
+    .core-values-section {
+        padding: 50px 0;
+    }
+
+    .core-values-heading {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .values-grid {
+        gap: 20px;
+    }
+
+    .value-card {
+        padding: 30px 25px;
+    }
+
+    .value-icon {
+        width: 65px;
+        height: 65px;
+        margin-bottom: 18px;
+    }
+
+    .value-title {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .value-description {
+        font-size: 0.88rem;
+        line-height: 1.6;
+    }
+}
+
+/* Responsive Design - Mobile Small */
+@media (max-width: 576px) {
+    .core-values-section {
+        padding: 40px 0;
+    }
+
+    .core-values-heading {
+        font-size: 1.8rem;
+        margin-bottom: 35px;
+    }
+
+    /* 1 column on mobile */
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .value-card {
+        padding: 35px 30px;
+    }
+
+    .value-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+
+    .value-title {
+        font-size: 1.25rem;
+        margin-bottom: 12px;
+    }
+
+    .value-description {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 400px) {
+    .core-values-heading {
+        font-size: 1.6rem;
+    }
+
+    .value-card {
+        padding: 30px 25px;
+    }
+
+    .value-icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .value-title {
+        font-size: 1.15rem;
+    }
+
+    .value-description {
+        font-size: 0.85rem;
+    }
+}
