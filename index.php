@@ -242,6 +242,42 @@
             </div>
         </div>
     </section>
+
+    <section class="container project-section">
+        <div id="projectCarousel" class="carousel slide hero-section" data-bs-ride="carousel" data-bs-interval="5000">
+            <!-- Carousel Inner -->
+            <div class="news-header">
+                <h2 class="project-title" data-aos="fade-up" data-aos-delay="250">Our Top Projects</h2>
+            </div>
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active" style="background-image: url('./assets/ship-bridge.jpg');">
+                    <div class="carousel-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title">Bridge wing Ecdis Solution Installation</h1>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item" style="background-image: url('./assets/tankCleaning.webp');">
+                    <div class="carousel-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title">Tank Cleaning</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
     <!-- News & Events Section -->
     <section class="news-section">
         <div class="container">
