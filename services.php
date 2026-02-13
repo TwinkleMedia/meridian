@@ -1,3 +1,46 @@
+<?php
+$services = [
+
+    [
+        'title' => "Riding Crew Services",
+        'desc' => "At Meridian Global Shipping, our Riding Crew Services are designed to provide flexible, skilled, and efficient onboard support to ensure vessels operate safely, efficiently, and without disruption. We deploy experienced riding teams comprising certified welders, fitters, electricians, mechanics, and other specialized technicians to carry out voyage repairs, maintenance tasks, equipment overhauls, and emergency rectifications while the vessel remains in operation.Our riding crews work in close coordination with ship management and onboard officers to execute planned and corrective maintenance with minimal impact on schedules and trading commitments. Whether supporting drydock preparation, steel renewal, machinery repairs, retrofitting projects, or compliance upgrades, we ensure all tasks are completed to the highest safety and quality standards.With a strong focus on efficiency, regulatory compliance, and cost optimization, Meridian Global's Riding Crew Services help shipowners reduce downtime, avoid unnecessary port stays, and maintain vessels at peak operational performance.",
+        'img' => './assets/RIDINGCREW.jpg'
+    ],
+    [
+        'title' => "Rope Access Team",
+        'desc' => "At Meridian Global Shipping, our Rope Access Team provides safe, efficient, and cost-effective solutions for inspections, maintenance, and repair work at height or in confined and hard-to-reach areas onboard vessels and offshore structures. Using internationally recognized rope access techniques and certified technicians, we eliminate the need for extensive scaffolding or heavy equipment, significantly reducing downtime and operational costs.Our rope access specialists are trained to carry out a wide range of services, including structural inspections, steel repairs, coating and painting works, NDT support, pipe maintenance, and emergency rectifications—all while adhering strictly to international safety standards and maritime regulations. Every project is carefully planned and risk-assessed to ensure maximum safety, precision, and minimal disruption to vessel operations.By combining technical expertise with advanced access methods, Meridian Global's Rope Access Team enables shipowners and operators to maintain structural integrity, enhance safety, and ensure regulatory compliance while optimizing time and budget efficiency.",
+        'img' => './assets/RopeAccessTeam.jpg'
+    ],
+    [
+        'title' => "Vessel Management",
+        'desc' => "At Meridian Global Shipping, we understand that effective vessel management is critical for maximizing performance and profitability while ensuring the safety and efficiency of our clients' fleets. Our Vessel Management team provides a wide range of services, including technical management, operational management, chartering, commercial management, safety management, and financial management. We work closely with our clients to develop customized solutions that meet their unique needs, taking into account factors such as vessel type, trading patterns, and budget. We work closely with our clients to develop customized solutions that meet their unique needs, taking into account factors such as vessel type, trading patterns, and budget. Our experienced professionals have the knowledge and expertise to ensure that vessels are operating at peak performance, while also ensuring compliance with all applicable regulations and standards.",
+        'img' => './assets/vesselmanagement.jpeg'
+    ],
+    [
+        'title' => "Marine Spare Parts",
+        'desc' => "At Meridian Global Shipping, we provide reliable and cost-effective Marine Spare Parts supply solutions to ensure uninterrupted vessel operations and optimal performance. With a strong global sourcing network and trusted manufacturers, we supply genuine and OEM spare parts for main engines, auxiliary engines, deck machinery, electrical systems, safety equipment, and other critical onboard components.Our team works closely with shipowners, managers, and technical superintendents to identify the right parts with precise specifications, ensuring compatibility, quality, and compliance with class and international maritime standards. We understand the urgency of marine operations, and therefore prioritize timely procurement, competitive pricing, and efficient logistics to deliver spare parts to vessels worldwide.By combining technical expertise with a streamlined supply chain, Meridian Global helps reduce downtime, prevent operational delays, and maintain vessels at peak efficiency while ensuring reliability and long-term cost optimization",
+        'img' => './assets/MarineSpareParts.jpeg'
+    ],
+    [
+        'title' => "Technical Consultancy",
+        'desc' => "At Meridian Global Shipping we provide expert advice and guidance to ensure that vessels are operating at peak performance, complying with all applicable regulations and standards, and minimizing downtime and maintenance costs. We offer a wide range of technical consultancy services, including new building supervision, drydock supervision, and ship performance optimization. Our experienced professionals work closely with our clients to develop customized solutions that meet their unique needs, taking into account factors such as vessel type, trading patterns, and budget. We are committed to ensuring that vessels are operating at their best, minimizing downtime and maintenance costs, and ensuring compliance with all applicable regulations and standards. Our new building supervision services include monitoring all aspects of the construction process, from design to delivery, ensuring that vessels are built to the highest standards and comply with all applicable regulations. We also provide ship performance optimization services, using advanced analytics and monitoring tools to optimize vessel performance, reduce fuel consumption, and minimize emissions. Our professionals have the knowledge and expertise to ensure that vessels are operating at peak performance, complying with all applicable regulations and standards, and minimizing downtime and maintenance costs.",
+        'img' => './assets/technical-consultancy.webp'
+    ],
+
+    [
+        'title' => "Audits & Inspections",
+        'desc' => "At Meridian Global Shipping, our Audits & Inspections services are designed to ensure vessels operate in full compliance with international maritime regulations, industry standards, and company policies. Our experienced auditors and marine professionals conduct comprehensive onboard and shore-based assessments to evaluate safety management systems, operational procedures, technical conditions, and regulatory adherence.We provide a wide range of audit and inspection services, including ISM, ISPS, MLC, and internal compliance audits, as well as pre-purchase inspections, condition assessments, and vetting support. Each audit is conducted with a structured and transparent approach, delivering detailed reports with practical recommendations to enhance safety, efficiency, and performance.By identifying potential risks and areas for improvement, Meridian Global helps shipowners and operators strengthen operational integrity, maintain regulatory compliance, and ensure continuous improvement across their fleet.",
+        'img' => './assets/Audits&Inspections.jpeg'
+    ]
+];
+
+// Get current service index from URL parameter
+$currentIndex = isset($_GET['service']) ? intval($_GET['service']) : 0;
+$currentIndex = max(0, min($currentIndex, count($services) - 1));
+$currentService = $services[$currentIndex];
+$defaultImg = './assets/MarineSpareParts.jpeg';
+$currentImage = isset($currentService['img']) ? $currentService['img'] : $defaultImg;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,106 +71,42 @@
             </div>
         </div>
     </section>
+
     <!-- Vision & Mission Tabs Section -->
     <section class="services-section">
         <h1 class="services-title">Our Services</h1>
 
-        <!-- Tab Navigation -->
-        <div class="tab-navigation">
-            <button class="tab-btn active" data-tab="technical">Technical Ship Management</button>
-            <button class="tab-btn" data-tab="vessel">Vessel Management</button>
-            <button class="tab-btn" data-tab="provisioning">Provisioning</button>
-            <button class="tab-btn" data-tab="consulting">Technical Consulting</button>
-        </div>
+        <div class="services-wrapper">
+            <!-- Sidebar Navigation -->
+            <aside class="sidebar">
+                <ul class="service-nav">
+                    <?php foreach ($services as $index => $service): ?>
+                        <li class="service-nav-item">
+                            <a href="?service=<?php echo $index; ?>"
+                                class="service-nav-link <?php echo $index === $currentIndex ? 'active' : ''; ?>">
+                                <?php echo htmlspecialchars($service['title']); ?>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </aside>
 
-        <!-- Tab Content -->
-        <div class="tab-content-area">
-            <!-- Technical Ship Management Tab -->
-            <div class="tab-pane active" id="technical">
-                <h2 class="service-header">Technical Ship Management</h2>
-                <img src="./assets/service1.jpg" alt="Ship in dry dock for technical management" class="service-image">
-                <div class="service-description">
-                    <p>At <strong> Meridian Global Shipping</strong> we believe that effective technical management is crucial for
-                        maximizing the performance and maintaining assets. Our services are designed to ensure that
-                        vessels operate safely, efficiently, and in compliance with all applicable regulations. Our team
-                        of experts offer a wide range of technical management services that cover every aspect of vessel
-                        operations. From maintenance and repairs to regulatory compliance, we handle it all with
-                        precision and professionalism. Our experienced professionals work closely with our clients to
-                        understand their unique requirements and tailor our services accordingly. We perform regular
-                        inspections, taking into account factors such as vessel age, type, and operational profile, to
-                        identify potential issues and implement corrective actions. By prioritizing preventive
-                        maintenance, and repairs, ensuring that vessels are always operating at their best. We are
-                        committed to ensuring compliance with all applicable regulations and industry standards. Our
-                        team stays up-to-date with the latest regulatory changes and work diligently to ensure that our
-                        clients' vessels meet all requirements. With Meridian Global Shipping, you can rest assured that
-                        your vessels are in good hands. We believe that effective technical management is crucial for
-                        maximizing performance and maintaining assets.</p>
+            <!-- Main Content Area -->
+            <main class="content-area">
+                <div class="service-image-container">
+                    <img src="<?php echo htmlspecialchars($currentImage) ?>"
+                        alt="<?php echo htmlspecialchars($currentService['title']); ?>" class="service-image">
                 </div>
-            </div>
 
-            <!-- Vessel Management Tab -->
-            <div class="tab-pane" id="vessel">
-                <h2 class="service-header">Vessel Management</h2>
-                <img src="./assets/service2.jpeg" alt="Vessel management operations" class="service-image">
-                <div class="service-description">
-                    <p>At <strong> Meridian Global Shipping</strong>, we understand that effective vessel management is critical for
-                        maximizing performance and profitability while ensuring the safety and efficiency of our
-                        clients' fleets. Our Vessel Management team provides a wide range of services, including
-                        technical management, operational management, chartering, commercial management, safety
-                        management, and financial management. We work closely with our clients to develop customized
-                        solutions that meet their unique needs, taking into account factors such as vessel type, trading
-                        patterns, and budget. We work closely with our clients to develop customized solutions that meet
-                        their unique needs, taking into account factors such as vessel type, trading patterns, and
-                        budget. Our experienced professionals have the knowledge and expertise to ensure that vessels
-                        are operating at peak performance, while also ensuring compliance with all applicable
-                        regulations and standards.</p>
-                </div>
-            </div>
-
-            <!-- Provisioning Tab -->
-            <div class="tab-pane" id="provisioning">
-                <h2 class="service-header">Provisioning</h2>
-                <img src="./assets/service3.webp" alt="Ship provisioning and supplies" class="service-image">
-                <div class="service-description">
-                    <p>We offer a wide range of provisioning services, including food and beverage supplies, cabin and
-                        deck supplies, and spare parts and equipment supplies. Our experienced professionals work
-                        closely with our clients to develop customized solutions that meet their unique needs, taking
-                        into account factors such as vessel type, trading patterns, and budget. Our food and beverage
-                        supply services include sourcing, storage, and delivery of food and beverages, ensuring that
-                        crew members have access to fresh, high-quality supplies. We also provide cabin and deck
-                        supplies, including bed linens, towels, and cleaning supplies, ensuring that vessels are clean
-                        and well-maintained. We also provide spare parts and equipment supply, ensuring that vessels
-                        have access to all necessary spare parts and equipment, minimizing downtime and maintenance
-                        costs. At our Shipping Service Company, we are committed to providing the highest level of
-                        service to our clients.
+                <div class="service-content">
+                    <p class="service-description">
+                        <?php echo htmlspecialchars($currentService['desc']); ?>
                     </p>
                 </div>
-            </div>
-
-            <!-- Technical Consulting Tab -->
-            <div class="tab-pane" id="consulting">
-                <h2 class="service-header">Technical Consulting</h2>
-                <img src="./assets/service4.jpg" alt="Technical consulting services" class="service-image">
-                <div class="service-description">
-                    <p>At <strong> Meridian Global</strong> we provide expert advice and guidance to ensure that vessels
-                        are operating at peak performance, complying with all applicable regulations and standards, and
-                        minimizing downtime and maintenance costs. We offer a wide range of technical consultancy
-                        services, including new building supervision, drydock supervision, and ship performance
-                        optimization. Our experienced professionals work closely with our clients to develop customized
-                        solutions that meet their unique needs, taking into account factors such as vessel type, trading
-                        patterns, and budget. We are committed to ensuring that vessels are operating at their best,
-                        minimizing downtime and maintenance costs, and ensuring compliance with all applicable
-                        regulations and standards. Our new building supervision services include monitoring all aspects
-                        of the construction process, from design to delivery, ensuring that vessels are built to the
-                        highest standards and comply with all applicable regulations. We also provide ship performance
-                        optimization services, using advanced analytics and monitoring tools to optimize vessel
-                        performance, reduce fuel consumption, and minimize emissions. Our professionals have the
-                        knowledge and expertise to ensure that vessels are operating at peak performance, complying with
-                        all applicable regulations and standards, and minimizing downtime and maintenance costs.</p>
-                </div>
-            </div>
+            </main>
         </div>
     </section>
+
     <?php include 'footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -139,30 +118,38 @@
         });
     </script>
 
-</body>
-<script>
-    // Tab Functionality
-    document.addEventListener('DOMContentLoaded', function () {
-        const tabButtons = document.querySelectorAll('.tab-btn');
-        const tabPanes = document.querySelectorAll('.tab-pane');
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const serviceLinks = document.querySelectorAll('.service-nav-link');
+            const serviceImage = document.querySelector('.service-image');
+            const serviceDescription = document.querySelector('.service-description');
 
-        tabButtons.forEach(button => {
-            button.addEventListener('click', function () {
-                // Remove active class from all buttons
-                tabButtons.forEach(btn => btn.classList.remove('active'));
+            const services = <?php echo json_encode($services); ?>;
 
-                // Add active class to clicked button
-                this.classList.add('active');
+            serviceLinks.forEach((link, index) => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent page reload
 
-                // Hide all tab panes
-                tabPanes.forEach(pane => pane.classList.remove('active'));
+                    // Remove active class from all links
+                    serviceLinks.forEach(l => l.classList.remove('active'));
 
-                // Show corresponding tab pane
-                const tabId = this.getAttribute('data-tab');
-                document.getElementById(tabId).classList.add('active');
+                    // Add active to clicked link
+                    this.classList.add('active');
+
+                    // Update content
+                    const service = services[index];
+                    serviceImage.src = service.img || '<?php echo $defaultImg; ?>';
+                    serviceImage.alt = service.title;
+                    serviceDescription.textContent = service.desc;
+
+                    // Update URL without reload
+                    const newUrl = `?service=${index}`;
+                    window.history.pushState({}, '', newUrl);
+                });
             });
         });
-    });
-</script>
+    </script>
+
+</body>
 
 </html>

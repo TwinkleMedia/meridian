@@ -853,6 +853,10 @@ body {
         height: 60px;
         right: 50px;
     }
+    .decorative-plane img
+    {
+        display: none;
+    }
 }
 
 /* Fade In Animations */
