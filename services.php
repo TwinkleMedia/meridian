@@ -48,10 +48,53 @@ $currentImage = isset($currentService['img']) ? $currentService['img'] : $defaul
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Meridian Global Shipping</title>
+
+    <meta name="description" content="<?php echo htmlspecialchars($pageDescription); ?>">
+    <meta name="author" content="Meridian Global Shipping">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="<?php echo $currentUrl; ?>">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<?php echo htmlspecialchars($pageTitle); ?>">
+    <meta property="og:description" content="<?php echo htmlspecialchars($pageDescription); ?>">
+    <meta property="og:url" content="<?php echo $currentUrl; ?>">
+    <meta property="og:site_name" content="Meridian Global Shipping">
+    <meta property="og:image"
+        content="https://meridianglobal.premierpropertyrelators.com/<?php echo ltrim($currentImage, './'); ?>">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo htmlspecialchars($pageTitle); ?>">
+    <meta name="twitter:description" content="<?php echo htmlspecialchars($pageDescription); ?>">
+    <meta name="twitter:image"
+        content="https://meridianglobal.premierpropertyrelators.com/<?php echo ltrim($currentImage, './'); ?>">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "<?php echo htmlspecialchars($currentService['title']); ?>",
+  "provider": {
+    "@type": "Organization",
+    "name": "Meridian Global Shipping",
+    "areaServed": {
+      "@type": "Place",
+      "name": "Dubai, UAE"
+    }
+  },
+  "description": "<?php echo htmlspecialchars($pageDescription); ?>"
+}
+</script>
+
+
 </head>
 
 <body>
@@ -74,7 +117,7 @@ $currentImage = isset($currentService['img']) ? $currentService['img'] : $defaul
 
     <!-- Vision & Mission Tabs Section -->
     <section class="services-section">
-        <h1 class="services-title">Our Services</h1>
+        <h2 class="services-title">Our Services</h2>
 
         <div class="services-wrapper">
             <!-- Sidebar Navigation -->
@@ -95,7 +138,8 @@ $currentImage = isset($currentService['img']) ? $currentService['img'] : $defaul
             <main class="content-area">
                 <div class="service-image-container">
                     <img src="<?php echo htmlspecialchars($currentImage) ?>"
-                        alt="<?php echo htmlspecialchars($currentService['title']); ?>" class="service-image">
+                        alt="<?php echo htmlspecialchars($currentService['title']); ?>- Meridian Global Shipping Dubai UAE"
+                        class="service-image">
                 </div>
 
                 <div class="service-content">

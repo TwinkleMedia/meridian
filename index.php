@@ -3,11 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meridian</title>
+
+    <title>Meridian Global Shipping | Vessel Chartering & Maritime Logistics in Dubai, UAE</title>
+
+    <meta name="description"
+        content="Meridian Global Shipping is a leading shipping company based in Dubai, UAE, specializing in vessel chartering, ship brokering, cargo transportation, and maritime logistics solutions worldwide.">
+
+    <meta name="keywords"
+        content="Meridian Global Shipping, Dubai shipping company, vessel chartering UAE, ship brokers Dubai, maritime logistics UAE, cargo transportation, vessel management">
+
+    <meta name="author" content="Meridian Global Shipping">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical (remove index.php) -->
+    <link rel="canonical" href="https://meridianglobal.premierpropertyrelators.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Meridian Global Shipping | Dubai, UAE">
+    <meta property="og:description"
+        content="Trusted vessel brokers and maritime logistics experts in Dubai, UAE. We provide reliable vessel chartering and global cargo solutions.">
+    <meta property="og:url" content="https://meridianglobal.premierpropertyrelators.com/">
+    <meta property="og:site_name" content="Meridian Global Shipping">
+    <meta property="og:image" content="https://meridianglobal.premierpropertyrelators.com/assets/images/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Meridian Global Shipping | Dubai, UAE">
+    <meta name="twitter:description"
+        content="Leading shipping company in Dubai specializing in vessel chartering, ship brokering and maritime logistics.">
+    <meta name="twitter:image" content="https://meridianglobal.premierpropertyrelators.com/assets/images/og-image.jpg">
+
+    <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Meridian Global Shipping",
+  "url": "https://meridianglobal.premierpropertyrelators.com/",
+  "logo": "https://meridianglobal.premierpropertyrelators.com/assets/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dubai",
+    "addressCountry": "UAE"
+  }
+}
+</script>
 </head>
 
 <body>
@@ -63,12 +109,12 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="service-card" onclick="location.href='services.php'">
                             <div class="service-card-image">
-                                <img src="./assets/technicalship.jpg" alt="Technical Ship Management">
+                                <img src="./assets/technicalship.jpg" alt="Riding Crew Services">
                             </div>
                             <div class="service-icon">
                                 <img src="./assets/svg1.png" alt="User Icon" class="user-icon">
                             </div>
-                            <h3 class="service-title">Technical Ship<br>Management</h3>
+                            <h3 class="service-title">Riding Crew<br>Services</h3>
                         </div>
                     </div>
 
@@ -89,12 +135,12 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="service-card" onclick="location.href='services.php'">
                             <div class="service-card-image">
-                                <img src="./assets/provisioning.jpg" alt="Provisioning">
+                                <img src="./assets/provisioning.jpg" alt="Marine Spare Parts">
                             </div>
                             <div class="service-icon">
                                 <img src="./assets/svg3.png" alt="User Icon" class="user-icon">
                             </div>
-                            <h3 class="service-title">Provisioning</h3>
+                            <h3 class="service-title">Marine Spare <br> Parts</h3>
                         </div>
                     </div>
 
@@ -161,6 +207,43 @@
         <!-- Decorative Wave Background -->
         <div class="wave-background"></div>
     </section>
+    <!-- Our Top Project -->
+    <section class="container project-section">
+        <div id="projectCarousel" class="carousel slide hero-section" data-bs-ride="carousel" data-bs-interval="5000">
+            <!-- Carousel Inner -->
+            <div class="news-header">
+                <h2 class="project-title" data-aos="fade-up" data-aos-delay="250">Our Top Projects</h2>
+            </div>
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active" style="background-image: url('./assets/ship-bridge.jpg');">
+                    <div class="carousel-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title">Bridge wing Ecdis Solution Installation</h1>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item" style="background-image: url('./assets/tankCleaning.webp');">
+                    <div class="carousel-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title">Tank Cleaning</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
     <!-- Achievements Section -->
     <section class="achievements-section">
         <div class="container-fluid">
@@ -243,41 +326,7 @@
         </div>
     </section>
 
-    <section class="container project-section">
-        <div id="projectCarousel" class="carousel slide hero-section" data-bs-ride="carousel" data-bs-interval="5000">
-            <!-- Carousel Inner -->
-            <div class="news-header">
-                <h2 class="project-title" data-aos="fade-up" data-aos-delay="250">Our Top Projects</h2>
-            </div>
-            <div class="carousel-inner">
-                <!-- Slide 1 -->
-                <div class="carousel-item active" style="background-image: url('./assets/ship-bridge.jpg');">
-                    <div class="carousel-overlay"></div>
-                    <div class="hero-content">
-                        <h1 class="hero-title">Bridge wing Ecdis Solution Installation</h1>
-                    </div>
-                </div>
 
-                <!-- Slide 2 -->
-                <div class="carousel-item" style="background-image: url('./assets/tankCleaning.webp');">
-                    <div class="carousel-overlay"></div>
-                    <div class="hero-content">
-                        <h1 class="hero-title">Tank Cleaning</h1>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
     <!-- News & Events Section -->
     <section class="news-section">
         <div class="container">
