@@ -57,6 +57,22 @@
             <div class="card" data-aos="fade-up" data-aos-delay="100" >
                     <img src="./assets/media4.jpg" alt="Green Shipping">
             </div>
+            <!-- Card 6 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="100" >
+                    <img src="./assets/gallery1.png" alt="Meridian Worker">
+            </div>
+            <!-- Card 7 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="100" >
+                    <img src="./assets/gallery2.png" alt="Meridian Worker">
+            </div>
+            <!-- Card 8 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="100" >
+                    <img src="./assets/gallery3.png" alt="Meridian Worker">
+            </div>
+            <!-- Card 9 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="100" >
+                    <video src="./assets/video.mp4"  class="w-full h-auto" autoplay muted loop>
+            </div>
         </div>
     </section>
 

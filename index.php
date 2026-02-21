@@ -104,9 +104,9 @@
         <!-- Service Cards Overlay - OUTSIDE carousel but INSIDE wrapper -->
         <div class="service-cards-container">
             <div class="container">
-                <div class="row g-4">
+                <div class="row g-3">
                     <!-- Card 1 -->
-                    <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="col-lg-2 col-md-6 col-sm-6">
                         <div class="service-card" onclick="location.href='services.php'">
                             <div class="service-card-image">
                                 <img src="./assets/technicalship.jpg" alt="Riding Crew Services">
@@ -119,7 +119,7 @@
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="col-lg-2 col-md-6 col-sm-6">
                         <div class="service-card" onclick="location.href='services.php'">
                             <div class="service-card-image">
                                 <img src="./assets/vesselmanagement.jpg" alt="Vessel Management">
@@ -127,12 +127,12 @@
                             <div class="service-icon">
                                 <img src="./assets/svg2.png" alt="User Icon" class="user-icon">
                             </div>
-                            <h3 class="service-title">Vessel<br>Management</h3>
+                            <h3 class="service-title">Rope Access<br>Team</h3>
                         </div>
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="col-lg-2 col-md-6 col-sm-6">
                         <div class="service-card" onclick="location.href='services.php'">
                             <div class="service-card-image">
                                 <img src="./assets/provisioning.jpg" alt="Marine Spare Parts">
@@ -140,12 +140,26 @@
                             <div class="service-icon">
                                 <img src="./assets/svg3.png" alt="User Icon" class="user-icon">
                             </div>
-                            <h3 class="service-title">Marine Spare <br> Parts</h3>
+                            <h3 class="service-title">Vessel<br> Management</h3>
                         </div>
                     </div>
 
                     <!-- Card 4 -->
-                    <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="service-card" onclick="location.href='services.php'">
+                            <div class="service-card-image">
+                                <img src="./assets/marineSpareParts.jpeg" alt="Marine Spare Parts">
+                            </div>
+                            <div class="service-icon">
+                                <img src="./assets/svg4.png" alt="User Icon" class="user-icon">
+                            </div>
+                            <h3 class="service-title">Marine Spare
+                                <br>Parts
+                            </h3>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col-lg-2 col-md-6 col-sm-6">
                         <div class="service-card" onclick="location.href='services.php'">
                             <div class="service-card-image">
                                 <img src="./assets/technical-consultancy.jpg" alt="Technical Consultancy">
@@ -156,6 +170,19 @@
                             <h3 class="service-title">Technical <br>Consultancy</h3>
                         </div>
                     </div>
+                    <!-- Card 6 -->
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <div class="service-card" onclick="location.href='services.php'">
+                            <div class="service-card-image">
+                                <img src="./assets/Audits&Inspections.jpeg" alt="Technical Consultancy">
+                            </div>
+                            <div class="service-icon">
+                                <img src="./assets/svg4.png" alt="User Icon" class="user-icon">
+                            </div>
+                            <h3 class="service-title">Audits & <br>Inspections</h3>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -219,7 +246,7 @@
                 <div class="carousel-item active" style="background-image: url('./assets/ship-bridge.jpg');">
                     <div class="carousel-overlay"></div>
                     <div class="hero-content">
-                        <h1 class="hero-title">Bridge wing Ecdis Solution Installation</h1>
+                        <h1 class="hero-title">Bridge Wing Ecdis Solution Installation</h1>
                     </div>
                 </div>
 
@@ -228,6 +255,27 @@
                     <div class="carousel-overlay"></div>
                     <div class="hero-content">
                         <h1 class="hero-title">Tank Cleaning</h1>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item" style="background-image: url('./assets/ballast.jpg');">
+                    <div class="carousel-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title">Ballast Tank Upgradation</h1>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-item" style="background-image: url('./assets/padeye.jpg');">
+                    <div class="carousel-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title">Automatic Bell & Gong Installation</h1>
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="carousel-item" style="background-image: url('./assets/deck.png');">
+                    <div class="carousel-overlay"></div>
+                    <div class="hero-content">
+                        <h1 class="hero-title">Deck Socket & Lashing Pad EYE Replacement</h1>
                     </div>
                 </div>
             </div>
