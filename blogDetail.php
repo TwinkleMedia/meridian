@@ -184,7 +184,7 @@ $related_blogs = array_slice($related_blogs, 0, 4, true);
     </div>
 
     <?php include 'footer.php'; ?>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         // Smooth scroll to top when page loads

@@ -148,7 +148,7 @@
                     <div class="col-lg-2 col-md-6 col-sm-6">
                         <div class="service-card" onclick="location.href='services.php'">
                             <div class="service-card-image">
-                                <img src="./assets/marineSpareParts.jpeg" alt="Marine Spare Parts">
+                                <img src="./assets/marinespare.jpeg" alt="Marine Spare Parts">
                             </div>
                             <div class="service-icon">
                                 <img src="./assets/svg4.png" alt="User Icon" class="user-icon">
