@@ -18,23 +18,23 @@
     <meta name="robots" content="index, follow">
 
     <!-- Canonical (remove index.php) -->
-    <link rel="canonical" href="https://meridianglobal.premierpropertyrelators.com/">
+    <link rel="canonical" href="https://meridianglobal.com/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Meridian Global Shipping | Dubai, UAE">
     <meta property="og:description"
         content="Trusted vessel brokers and maritime logistics experts in Dubai, UAE. We provide reliable vessel chartering and global cargo solutions.">
-    <meta property="og:url" content="https://meridianglobal.premierpropertyrelators.com/">
+    <meta property="og:url" content="https://meridianglobalshipping.com/">
     <meta property="og:site_name" content="Meridian Global Shipping">
-    <meta property="og:image" content="https://meridianglobal.premierpropertyrelators.com/assets/images/og-image.jpg">
+    <meta property="og:image" content="https://meridianglobalshipping.com/assets/images/og-image.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Meridian Global Shipping | Dubai, UAE">
     <meta name="twitter:description"
         content="Leading shipping company in Dubai specializing in vessel chartering, ship brokering and maritime logistics.">
-    <meta name="twitter:image" content="https://meridianglobal.premierpropertyrelators.com/assets/images/og-image.jpg">
+    <meta name="twitter:image" content="https://meridianglobalshipping.com/assets/images/og-image.jpg">
 
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -45,8 +45,8 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Meridian Global Shipping",
-  "url": "https://meridianglobal.premierpropertyrelators.com/",
-  "logo": "https://meridianglobal.premierpropertyrelators.com/assets/logo.png",
+  "url": "https://meridianglobalshipping.com/",
+  "logo": "https://meridianglobalshipping.com/assets/logo.png",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Dubai",

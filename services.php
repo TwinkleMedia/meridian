@@ -63,14 +63,14 @@ $currentImage = isset($currentService['img']) ? $currentService['img'] : $defaul
     <meta property="og:url" content="<?php echo $currentUrl; ?>">
     <meta property="og:site_name" content="Meridian Global Shipping">
     <meta property="og:image"
-        content="https://meridianglobal.premierpropertyrelators.com/<?php echo ltrim($currentImage, './'); ?>">
+        content="https://meridianglobalshipping.com/<?php echo ltrim($currentImage, './'); ?>">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?php echo htmlspecialchars($pageTitle); ?>">
     <meta name="twitter:description" content="<?php echo htmlspecialchars($pageDescription); ?>">
     <meta name="twitter:image"
-        content="https://meridianglobal.premierpropertyrelators.com/<?php echo ltrim($currentImage, './'); ?>">
+        content="https://meridianglobalshipping.com/<?php echo ltrim($currentImage, './'); ?>">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">

@@ -13,21 +13,21 @@
     <meta name="author" content="Meridian Global Shipping">
     <meta name="robots" content="index, follow">
     <!-- Canonical -->
-    <link rel="canonical" href="https://meridianglobal.premierpropertyrelators.com/about.php">
+    <link rel="canonical" href="https://meridianglobalshipping.com/about.php">
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="About Meridian Global Shipping | Dubai, UAE">
     <meta property="og:description"
         content="Discover our mission, expertise, and global maritime network. Meridian Global Shipping delivers reliable vessel chartering and shipping solutions worldwide.">
-    <meta property="og:url" content="https://meridianglobal.premierpropertyrelators.com/about.php">
+    <meta property="og:url" content="https://meridianglobalshipping.com/about.php">
     <meta property="og:site_name" content="Meridian Global Shipping">
-    <meta property="og:image" content="https://meridianglobal.premierpropertyrelators.com/assets/images/about-og.jpg">
+    <meta property="og:image" content="https://meridianglobalshipping.com/assets/images/about-og.jpg">
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About Meridian Global Shipping | Dubai Maritime Experts">
     <meta name="twitter:description"
         content="Trusted shipping company in Dubai specializing in vessel chartering, ship brokering and maritime logistics solutions.">
-    <meta name="twitter:image" content="https://meridianglobal.premierpropertyrelators.com/assets/aboutbg.png">
+    <meta name="twitter:image" content="https://meridianglobalshipping.com/assets/aboutbg.png">
 
     <!-- css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -41,8 +41,8 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Meridian Global Shipping",
-  "url": "https://meridianglobal.premierpropertyrelators.com/",
-  "logo": "https://meridianglobal.premierpropertyrelators.com/assets/logo.png",
+  "url": "https://meridianglobalshipping.com/",
+  "logo": "https://meridianglobalshipping.com/assets/logo.png",
   "description": "Dubai-based shipping company specializing in vessel chartering, ship brokering, and maritime logistics solutions.",
   "address": {
     "@type": "PostalAddress",
