@@ -11,6 +11,7 @@
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="style.css">
+    <?php include 'link.php'; ?>
 </head>
 
 <body>

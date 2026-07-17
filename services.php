@@ -94,7 +94,7 @@ $currentImage = isset($currentService['img']) ? $currentService['img'] : $defaul
 }
 </script>
 
-
+<?php include 'link.php'; ?>
 </head>
 
 <body>

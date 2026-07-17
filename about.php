@@ -51,6 +51,9 @@
   }
 }
 </script>
+
+
+<?php include 'link.php'; ?>
 </head>
 
 <body>
