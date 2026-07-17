@@ -68,7 +68,7 @@
                 <!-- Slide 1 -->
                 <div class="carousel-item active" style="background-image: url('./assets/homebanner1.webp');">
                     <div class="hero-content">
-                        <h1 class="hero-title">Your Partner For Innovative<br>Marine Solutions</h1>
+                        <h1 class="hero-title main_heading">Your Partner For Innovative<br>Marine Solutions</h1>
                         <a href="contact.php" class="reach-us-btn">Reach Us</a>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                 <!-- Slide 2 -->
                 <div class="carousel-item" style="background-image: url('./assets/homebanner2.webp');">
                     <div class="hero-content">
-                        <h1 class="hero-title">Anchored In Innovation,<br>Sailing Towards Success</h1>
+                        <h1 class="hero-title main_heading">Anchored In Innovation<br>Sailing Towards Success</h1>
                         <a href="contact.php" class="reach-us-btn">Reach Us</a>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                 <!-- Slide 3 -->
                 <div class="carousel-item" style="background-image: url('./assets/homebanner3.webp');">
                     <div class="hero-content">
-                        <h1 class="hero-title">Global Reach,<br>Local Expertise</h1>
+                        <h1 class="hero-title main_heading">Global Reach<br>Local Expertise</h1>
                         <a href="contact.php" class="reach-us-btn">Reach Us</a>
                     </div>
                 </div>
@@ -216,7 +216,7 @@
                 <!-- Right Side - Content -->
                 <div class="col-lg-6 col-md-6">
                     <div class="about-content">
-                        <h2 class="about-heading">About Us</h2>
+                        <h2 class="about-heading main_heading">About Us</h2>
                         <p class="about-text">
                             <strong>Meridian Global Shipping is established and based in Dubai, UAE.</strong> Through an
                             extensive network of
@@ -239,14 +239,14 @@
         <div id="projectCarousel" class="carousel slide hero-section" data-bs-ride="carousel" data-bs-interval="5000">
             <!-- Carousel Inner -->
             <div class="news-header">
-                <h2 class="project-title" data-aos="fade-up" data-aos-delay="250">Our Top Projects</h2>
+                <h2 class="project-title main_heading" data-aos="fade-up" data-aos-delay="250">Our Top Projects</h2>
             </div>
             <div class="carousel-inner">
                 <!-- Slide 1 -->
                 <div class="carousel-item active" style="background-image: url('./assets/ship-bridge.jpg');">
                     <div class="carousel-overlay"></div>
                     <div class="hero-content">
-                        <h1 class="hero-title">Bridge Wing Ecdis Solution Installation</h1>
+                        <h2 class="hero-title main_heading">Bridge Wing Ecdis Solution Installation</h2>
                     </div>
                 </div>
 
@@ -254,28 +254,28 @@
                 <div class="carousel-item" style="background-image: url('./assets/tankCleaning.webp');">
                     <div class="carousel-overlay"></div>
                     <div class="hero-content">
-                        <h1 class="hero-title">Tank Cleaning</h1>
+                        <h2 class="hero-title main_heading">Tank Cleaning</h2>
                     </div>
                 </div>
                 <!-- Slide 3 -->
                 <div class="carousel-item" style="background-image: url('./assets/ballast.jpg');">
                     <div class="carousel-overlay"></div>
                     <div class="hero-content">
-                        <h1 class="hero-title">Ballast Tank Upgradation</h1>
+                        <h2 class="hero-title main_heading">Ballast Tank Upgradation</h2>
                     </div>
                 </div>
                 <!-- Slide 4 -->
                 <div class="carousel-item" style="background-image: url('./assets/padeye.jpg');">
                     <div class="carousel-overlay"></div>
                     <div class="hero-content">
-                        <h1 class="hero-title">Automatic Bell & Gong Installation</h1>
+                        <h2 class="hero-title main_heading">Automatic Bell & Gong Installation</h2>
                     </div>
                 </div>
                 <!-- Slide 5 -->
                 <div class="carousel-item" style="background-image: url('./assets/deck.png');">
                     <div class="carousel-overlay"></div>
                     <div class="hero-content">
-                        <h1 class="hero-title">Deck Socket & Lashing Pad EYE Replacement</h1>
+                        <h2 class="hero-title main_heading">Deck Socket & Lashing Pad EYE Replacement</h2>
                     </div>
                 </div>
             </div>
@@ -299,7 +299,7 @@
                 <!-- Left Side - Text Content -->
                 <div class="col-lg-4 col-md-12">
                     <div class="achievements-content" data-aos="fade-up" data-aos-delay="100">
-                        <h2 class="achievements-heading">Achievements</h2>
+                        <h2 class="achievements-heading main_heading">Achievements</h2>
                         <p class="achievements-text">
                             We Are Proud To Share With You Some Of Our Greatest Milestones And Accomplishments Over The
                             Years.
@@ -376,17 +376,17 @@
 
 
     <!-- News & Events Section -->
-    <section class="news-section">
+    <!-- <section class="news-section">
         <div class="container">
-            <!-- Section Heading -->
+            
             <div class="news-header">
                 <h3 class="news-subtitle" data-aos="fade-up" data-aos-delay="100">News & Events</h3>
-                <h2 class="news-title" data-aos="fade-up" data-aos-delay="250">Sitamets consetetur</h2>
+                <h2 class="news-title main_heading" data-aos="fade-up" data-aos-delay="250">Sitamets consetetur</h2>
             </div>
 
-            <!-- News Cards -->
+          
             <div class="row g-4">
-                <!-- Card 1 -->
+              
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="news-card">
                         <div class="news-image">
@@ -408,7 +408,7 @@
                     </div>
                 </div>
 
-                <!-- Card 2 -->
+          
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="450">
                     <div class="news-card">
                         <div class="news-image">
@@ -430,7 +430,7 @@
                     </div>
                 </div>
 
-                <!-- Card 3 -->
+               
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                     <div class="news-card">
                         <div class="news-image">
@@ -453,19 +453,19 @@
                 </div>
             </div>
 
-            <!-- View More Button -->
+            
             <div class="text-center mt-5">
                 <a href="newsMedia.php" class="view-more-btn">View More</a>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="contact-cta-section" data-aos="fade-up" data-aos-delay="400">
         <div class="container">
             <div class="row align-items-center">
                 <!-- Left Side - Content -->
                 <div class="col-lg-6 col-md-6">
                     <div class="cta-content">
-                        <h2 class="cta-heading">Contact Us</h2>
+                        <h2 class="cta-heading main_heading">Contact Us</h2>
                         <p class="cta-text">
                             Let's help your shipping business reach new heights! Enquire now to get the best services
                             that will optimize your operations and take your business to the next level.
@@ -476,8 +476,8 @@
                 <!-- Right Side - Contact Card -->
                 <div class="col-lg-6 col-md-6">
                     <div class="cta-card">
-                        <h3 class="cta-card-title">Enquire Now</h3>
-                        <a href="tel:+912249782600" class="cta-phone">+91 22-49782600</a>
+                        <!-- <h3 class="cta-card-title">Enquire Now</h3> -->
+                        <!-- <a href="tel:+912249782600" class="cta-phone">+91 22-49782600</a> -->
                         <a href="contact.php" class="cta-button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"

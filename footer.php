@@ -3,7 +3,7 @@
         <div class="row">
             <!-- Contact Us Column -->
             <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
-                <h4 class="footer-heading">Contact Us</h4>
+                <h4 class="footer-heading main_heading">Contact Us</h4>
                 <ul class="footer-list">
                     <li class="footer-address">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -11,7 +11,7 @@
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                             <circle cx="12" cy="10" r="3"></circle>
                         </svg>
-                        <span>Office No-938, 9th Floor, Burjuman Business Tower, Burjuman mall, Dubai, UAE.</span>
+                        <span>Meridian Global Shipping LLC, Office No 503, Building No R364, Al Wasl Properties, Near Karama Post Office, Dubai, UAE.</span>
                     </li>
                     <li class="footer-email">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -36,7 +36,7 @@
 
             <!-- Explore Column -->
             <div class="col-lg-2 col-md-6 col-sm-6 mb-4">
-                <h4 class="footer-heading">Explore</h4>
+                <h4 class="footer-heading main_heading">Explore</h4>
                 <ul class="footer-links">
                     <li><a href="index.php">Home</a></li>
                     <li><a href="newsMed.php">News & Media</a></li>
@@ -48,7 +48,7 @@
 
             <!-- About Us Column -->
             <div class="col-lg-2 col-md-6 col-sm-6 mb-4">
-                <h4 class="footer-heading">About Us</h4>
+                <h4 class="footer-heading main_heading">About Us</h4>
                 <ul class="footer-links">
                     <li><a href="about.php">Overview</a></li>
                     <li><a href="about.php#vision">Vision & Mission</a></li>
@@ -59,7 +59,7 @@
 
             <!-- Services Column -->
             <div class="col-lg-2 col-md-6 col-sm-6 mb-4">
-                <h4 class="footer-heading">Services</h4>
+                <h4 class="footer-heading main_heading">Services</h4>
                 <ul class="footer-links">
                     <li><a href="services.php#technical">Technical Ship Management</a></li>
                     <li><a href="services.php#vessel">Vessel Management</a></li>

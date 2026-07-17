@@ -19,7 +19,7 @@
         <div class="career-hero-overlay"></div>
         <div class="container">
             <div class="career-hero-content">
-                <h1 class="career-hero-title">Career</h1>
+                <h1 class="career-hero-title main_heading">Career</h1>
                 <nav class="breadcrumb-nav">
                     <a href="index.php">Home</a>
                     <span class="separator">></span>
@@ -32,13 +32,13 @@
         <div class="content-wrapper">
             <!-- Top White Section -->
             <div class="top-section">
-                <h1 class="main-title">Latest Open Positions</h1>
-                <h2 class="subtitle">Coming Soon</h2>
+                <h1 class="main-title main_heading">Latest Open Positions</h1>
+                <h2 class="subtitle main_heading">Coming Soon</h2>
             </div>
 
             <!-- Bottom Contact Section -->
             <div class="details-section">
-                <h2>For more details</h2>
+                <h2 class="main_heading">For more details</h2>
                 <div class="contact-info">
                     <strong>Call Us:</strong> <a href="tel:+971506508601">+971506508601</a> | 
                     <strong>Email Us:</strong> <a href="mailto:info@meridianglobalshipping.com">info@meridianglobalshipping.com</a>

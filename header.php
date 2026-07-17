@@ -23,9 +23,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                         href="./about.php">About Us</a></li>
                 <li class="nav-item"><a class="nav-link <?php echo ($currentPage == 'services.php') ? 'active' : ''; ?>"
                         href="./services.php">Services</a></li>
-                <li class="nav-item"><a
+                <!-- <li class="nav-item"><a
                         class="nav-link <?php echo ($currentPage == 'newsMedia.php') ? 'active' : ''; ?>"
-                        href="./newsMedia.php">News & Media</a></li>
+                        href="./newsMedia.php">News & Media</a></li> -->
                 <li class="nav-item"><a class="nav-link <?php echo ($currentPage == 'gallery.php') ? 'active' : ''; ?>"
                         href="./gallery.php">Gallery</a></li>
                 <li class="nav-item"><a class="nav-link <?php echo ($currentPage == 'career.php') ? 'active' : ''; ?>"

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Meridian Global Shipping</title>
+    <title class="main_heading">Contact Us - Meridian Global Shipping</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.3/build/css/intlTelInput.css">
 
@@ -21,7 +21,7 @@
         <div class="contact-hero-overlay"></div>
         <div class="container">
             <div class="contact-hero-content">
-                <h1 class="contact-hero-title">Contact Us</h1>
+                <h1 class="contact-hero-title main_heading">Contact Us</h1>
                 <nav class="breadcrumb-nav">
                     <a href="index.php">Home</a>
                     <span class="separator">></span>
@@ -35,7 +35,7 @@
             <div class="row">
                 <!-- Left Column: Get In Touch -->
                 <div class="col-lg-5 col-md-12 left-column">
-                    <h2>Get In Touch</h2>
+                    <h2 class="main_heading">Get In Touch</h2>
 
                     <div class="contact-item">
                         <div class="contact-icon">
@@ -43,7 +43,7 @@
                         </div>
                         <div class="contact-details">
                             <h5>Meridian Global Shipping LLC</h5>
-                            <p>Office No-938, 9th Floor, Burjuman Business Tower, Burjuman mall, Dubai, UAE.</p>
+                            <p>Meridian Global Shipping LLC, Office No 503, Building No R364, Al Wasl Properties, Near Karama Post Office, Dubai, UAE.</p>
                         </div>
                     </div>
 
@@ -70,7 +70,7 @@
 
                 <!-- Right Column: Write Us Form -->
                 <div class="col-lg-7 col-md-12 right-column">
-                    <h2>Write us</h2>
+                    <h2 class="main_heading">Write us</h2>
 
                     <form id="contactForm" action="sendMail.php" method="POST">
                         <div class="row">

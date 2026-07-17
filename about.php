@@ -61,7 +61,7 @@
         <div class="about-hero-overlay"></div>
         <div class="container">
             <div class="about-hero-content">
-                <h1 class="about-hero-title">About Us</h1>
+                <h1 class="about-hero-title main_heading">About Us</h1>
                 <nav class="breadcrumb-nav">
                     <a href="index.php">Home</a>
                     <span class="separator">></span>
@@ -83,7 +83,7 @@
 
             <!-- Overview Section -->
             <div class="overview-section">
-                <h2 class="section-heading" data-aos="fade-up" data-aos-delay="300">Overview</h2>
+                <h2 class="section-heading main_heading" data-aos="fade-up" data-aos-delay="300">Overview</h2>
                 <div class="overview-content">
                     <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="900" data-aos-easing="ease-out-cubic">
                         <strong>Meridian Global Shipping</strong> is established and based in Dubai, UAE. Through an
@@ -110,11 +110,11 @@
         <div class="container">
             <!-- Tab Buttons -->
             <div class="vm-tabs">
-                <button class="vm-tab-btn active" data-tab="vision" data-aos="fade-up" data-aos-delay="300">
+                <button class="vm-tab-btn active main_heading" data-tab="vision" data-aos="fade-up" data-aos-delay="300">
                     <img src="./assets/vision.png" alt="meridian vision icon" width="35" height="35">
                     Vision
                 </button>
-                <button class="vm-tab-btn" data-tab="mission" data-aos="fade-up" data-aos-delay="480">
+                <button class="vm-tab-btn main_heading" data-tab="mission" data-aos="fade-up" data-aos-delay="480">
                     <img src="./assets/mission.png" alt="meridian mission icon" width="35" height="35">
                     Mission
                 </button>
@@ -125,7 +125,7 @@
                 <!-- Vision Content -->
                 <div class="vm-tab-content active" id="vision-content">
                     <div class="vm-content-box">
-                        <h3 class="vm-content-heading">Our vision is to be the global leader
+                        <h3 class="vm-content-heading ">Our vision is to be the global leader
                             in comprehensive ship management
                             services, driven by excellence,
                             sustainability, and social responsibility.</h3>
@@ -135,7 +135,7 @@
                 <!-- Mission Content -->
                 <div class="vm-tab-content" id="mission-content">
                     <div class="vm-content-box">
-                        <h3 class="vm-content-heading">Our mission is to provide our clients
+                        <h3 class="vm-content-heading ">Our mission is to provide our clients
                             with the highest quality services and
                             solutions, tailored to their unique needs.</h3>
                     </div>
@@ -147,7 +147,7 @@
     <section class="core-values-section" id="coreValues">
         <div class="container">
             <!-- Section Heading -->
-            <h2 class="core-values-heading">Core Values</h2>
+            <h2 class="core-values-heading main_heading">Core Values</h2>
 
             <!-- Values Grid -->
             <div class="values-grid">
@@ -166,7 +166,7 @@
                     <div class="value-icon">
                         <img src="./assets/quality.png" alt="Quality Icon">
                     </div>
-                    <h3 class="value-title">Quality</h3>
+                    <h3 class="value-title main_heading">Quality</h3>
                     <p class="value-description">We focus on producing high-quality elevators that meet or exceed
                         industry standards.</p>
                 </div>
@@ -176,7 +176,7 @@
                     <div class="value-icon">
                         <img src="./assets/innovation.png" alt="Innovation Icon">
                     </div>
-                    <h3 class="value-title">Innovation</h3>
+                    <h3 class="value-title main_heading">Innovation</h3>
                     <p class="value-description">We invest in research and development to stay ahead of the curve.</p>
                 </div>
 
@@ -185,7 +185,7 @@
                     <div class="value-icon">
                         <img src="./assets/customer-service.png" alt="Customer Service Icon">
                     </div>
-                    <h3 class="value-title">Customer Service</h3>
+                    <h3 class="value-title main_heading">Customer Service</h3>
                     <p class="value-description">We prioritize their customers and ensure that they receive excellent
                         service.</p>
                 </div>
@@ -195,7 +195,7 @@
                     <div class="value-icon">
                         <img src="./assets/sustainability.png" alt="Sustainability Icon">
                     </div>
-                    <h3 class="value-title">Sustainability</h3>
+                    <h3 class="value-title main_heading">Sustainability</h3>
                     <p class="value-description">We strive to reduce their carbon footprint and work towards sustainable
                         manufacturing practices, including the use of eco-friendly materials and reducing waste.</p>
                 </div>

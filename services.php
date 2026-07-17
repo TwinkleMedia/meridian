@@ -105,7 +105,7 @@ $currentImage = isset($currentService['img']) ? $currentService['img'] : $defaul
         <div class="services-hero-overlay"></div>
         <div class="container">
             <div class="services-hero-content">
-                <h1 class="services-hero-title">Services</h1>
+                <h1 class="services-hero-title main_heading">Services</h1>
                 <nav class="breadcrumb-nav">
                     <a href="index.php">Home</a>
                     <span class="separator">></span>
@@ -117,7 +117,7 @@ $currentImage = isset($currentService['img']) ? $currentService['img'] : $defaul
 
     <!-- Vision & Mission Tabs Section -->
     <section class="services-section">
-        <h2 class="services-title">Our Services</h2>
+        <h2 class="services-title main_heading">Our Services</h2>
 
         <div class="services-wrapper">
             <!-- Sidebar Navigation -->

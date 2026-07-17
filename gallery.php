@@ -21,7 +21,7 @@
         <div class="news-hero-overlay"></div>
         <div class="container">
             <div class="news-hero-content">
-                <h1 class="news-hero-title">Gallery</h1>
+                <h1 class="news-hero-title main_heading">Gallery</h1>
                 <nav class="breadcrumb-nav">
                     <a href="index.php">Home</a>
                     <span class="separator">></span>
